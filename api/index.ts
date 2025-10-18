@@ -2,7 +2,6 @@ import express, { type Request, Response, NextFunction } from "express";
 import { type User, type InsertUser, type FertilizerRecord, type DashboardMetrics, type TopFertilizer } from "../shared/schema";
 import { randomUUID } from "crypto";
 import { data as fertilizerData } from "../shared/fertilizer-data";
-import serverless from "serverless-http";
 import { z } from "zod";
 
 // ============ STORAGE ============
@@ -273,4 +272,4 @@ app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
 });
 
 // Export Express app for Vercel serverless
-export default serverless(app);
+export default app;
