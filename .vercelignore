@@ -1,0 +1,22 @@
+# Vercel ignore file
+# Don't upload these to Vercel
+
+# Replit-specific files
+server/
+.replit
+replit.nix
+replit.md
+
+# Development
+node_modules/
+.git/
+.env.local
+.env.development
+
+# Build artifacts  
+dist/
+*.log
+
+# IDE
+.vscode/
+.idea/
